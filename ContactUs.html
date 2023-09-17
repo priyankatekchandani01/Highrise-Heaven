@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contact Section Styles */
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.contact h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-warning:hover {
+    background-color: #ffa000;
+}
+
+/* Adjust spacing as needed */
+.mt-3 {
+    margin-top: 20px;
+}
+
+.pb-5 {
+    padding-bottom: 20px;
+}
+
+</style>
+<body>
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h1>Contact Us</h1>
+                        <i>"We value your input and are here to address any questions or concerns you may have. Whether you're interested in our services, need assistance, or simply want to get in touch, please don't hesitate to reach out to us. Our dedicated team is ready to assist you. Feel free to fill out the contact form below with your name, email address, and your query, and we'll get back to you promptly. We appreciate your interest in our work and look forward to hearing from you."</i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 p-4">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" required placeholder="Your Full Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" required placeholder="Your Email Here">
+                        </div>
+                        <div class="mb-3">
+                            <textarea rows="3" required class="form-control" placeholder="Your Query Here"></textarea>
+                        </div>
+                        <button class="btn btn-warning btn-lg btn-block mt-3">Send Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
