@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <title>About Us</title>
     <style>
+	body {
+    background-color: black;
+}
+	h1{
+	color:#F5DEB3;
+	text-align: center;
+	font-size: 40px;
+	}
+	
         .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
+background-color: black;			
         }
 
         .description {
             flex: 1;
             padding: 20px;
+			color:white;
         }
 
         .description h2 {
             font-size: 24px;
+			color:white;
         }
 
         .description p {
@@ -38,16 +50,17 @@
             background-color: blue;
             color: white;
             padding: 10px 20px;
-            border: none;
+            border: 2px solid white;
             cursor: pointer;
         }
     </style>
 </head>
 <body>
+<h1><u><i>ABOUT US</i></u></h1>
     <section>
         <div class="container">
             <div class="description">
-                <h2>We Provide the Best Quality and Services</h2>
+                <h2><u>We Provide the Best Quality and Services</u></h2>
                 <p>"We take pride in delivering unparalleled quality and top-notch services to meet and exceed your expectations. Your satisfaction is our commitment."</p>
             </div>
             <div class="image">
@@ -60,14 +73,14 @@
                 <img src="https://i.ibb.co/8ByPbkT/building-3.jpg" width="500" alt="About Us Image">
             </div>
             <div class="description">
-                <h2>Our Story and Mission</h2>
+                <h2><u>Our Story and Mission</u></h2>
                 <p>"At the heart of our journey lies a passion for innovation and a mission to make a positive impact. We strive to transform industries and enhance lives through cutting-edge solutions and unwavering dedication to our vision."</p>
             </div>
         </div>
 
         <div class="container">
             <div class="description">
-                <h2>Our Journey</h2>
+                <h2><u>Our Journey</u></h2>
                 <p>"Our journey is a testament to our perseverance and commitment to excellence. From humble beginnings, we've forged a path of growth and innovation, continually pushing boundaries to create a brighter future."</p>
                 
             </div>
@@ -75,7 +88,7 @@
                 <img src="https://i.ibb.co/Tg42LZL/building-1.webp" width="500" alt="About Us Image">
             </div>
         </div>
-		<button class="button">Learn More</button>
+		<button class="button" onclick="alert('You have clicked on Learn More button')">Learn More</button>
     </section>
 </body>
 </html>
