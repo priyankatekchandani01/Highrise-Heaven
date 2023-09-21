@@ -1,33 +1,45 @@
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Service Section</title>
     <style>
-	 h1 {
-            color: #000; /* Set the color to black */
+        h1 {
+            color: white;
             text-align: center;
         }
 
         body {
-            background-color: white;
-            color: #fff;
+            background-color: black;
+            color: white;
             padding: 60px 0;
         }
+
         .container {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            overflow: hidden; /* Hide overflowing content */
         }
 
         .col-lg-4 {
             flex: 0 0 calc(33.333% - 20px);
             margin-right: 20px;
             margin-bottom: 20px;
+            position: relative;
+            z-index: 1; /* Ensure cards appear above the parabolic curve */
         }
 
         .card {
-            background-color: #343a40;
-            color: #fff;
+            border: 4px solid white;
+            color: white;
+            background-color: #333; /* Background color for the cards */
+            border-radius: 10px; /* Rounded corners for the cards */
+            padding: 20px;
+            height: 300px; /* Adjust the height as needed */
+            transition: transform 0.3s ease;
         }
 
         .card-title {
@@ -42,44 +54,58 @@
             background-color: #ffc107;
             color: #000;
         }
+
+        /* Parabolic curve shape */
+        .parabola {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: black; /* Background color of the parabola */
+            height: 200px; /* Adjust the height to control the curve */
+            border-radius: 50%;
+            z-index: 0; /* Place the curve behind the cards */
+        }
     </style>
 </head>
 <body>
-<h1>OUR SERVICES </h1>
-<section id="services">
-    <div class="container">
-        <div class="col-lg-4">
-            <div class="card text-white text-center">
-                <div class="card-body" width="100">
-                    <i class="bi bi-subtract" style="font-size: 36px;"></i>
-                    <h3 class="card-title">Best Quality</h3>
-                    <p class="lead">Best quality is at the heart of everything we do. We are committed to delivering excellence in every aspect of our work, from the materials we use to the craftsmanship we employ. Our dedication to quality is unwavering, and it drives us to constantly strive for perfection.</p>
-                    <button class="btn">Read More</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="card text-white text-center">
-                <div class="card-body" width="100">
-                    <i class="bi bi-slack" style="font-size: 36px;"></i>
-                    <h3 class="card-title">Sustainability</h3>
-                    <p class="lead">Sustainability is at the core of our values and practices. We recognize the profound impact that construction and development can have on the environment, and we are committed to minimizing that impact while promoting a more sustainable future.</p>
-                    <button class="btn">Read More</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="card text-white text-center">
-                <div class="card-body" >
-                    <i class="bi bi-playstation" style="font-size: 36px;"></i>
-                    <h3 class="card-title">Integrity</h3>
-                    <p class="lead">Integrity is the cornerstone of our business ethos.Our commitment to integrity extends to every facet of our work, from our interactions with clients and partners to the quality of our craftsmanship.</p>
-                    <button class="btn">Read More</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <h1><u><i>OUR SERVICES</i></u></h1>
+    <section id="services">
+        <div class="container">
+            
+            <div class="parabola"></div>
 
+            <div class="col-lg-4">
+                <div class="card text-white text-center">
+                    <div class="card-body">
+                        <i class="bi bi-subtract" style="font-size: 36px;"></i>
+                        <h3 class="card-title"><u>Best Quality</u></h3>
+                        <p class="lead">Best quality is at the heart of everything we do. We are committed to delivering excellence in every aspect of our work, from the materials we use to the craftsmanship we employ. Our dedication to quality is unwavering, and it drives us to constantly strive for perfection.</p>
+                        <button class="btn" onclick="alert('You have clicked on Read More button')">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card text-white text-center">
+                    <div class="card-body">
+                        <i class="bi bi-slack" style="font-size: 36px;"></i>
+                        <h3 class="card-title"><u>Sustainability</u></h3>
+                        <p class="lead">Sustainability is at the core of our values and practices. We recognize the profound impact that construction and development can have on the environment, and we are committed to minimizing that impact while promoting a more sustainable future.</p>
+                        <button class="btn" onclick="alert('You have clicked on Read More button')">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card text-white text-center">
+                    <div class="card-body">
+                        <i class="bi bi-playstation" style="font-size: 36px;"></i>
+                        <h3 class="card-title"><u>Integrity</u></h3>
+                        <p class="lead">Integrity is the cornerstone of our business ethos. Our commitment to integrity extends to every facet of our work, from our interactions with clients and partners to the quality of our craftsmanship.</p>
+                        <button class="btn" onclick="alert('You have clicked on Read More button')">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
